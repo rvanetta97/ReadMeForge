@@ -38,4 +38,4 @@ function generateReadme (data){
     `   
 }
 
-module.exports = generateReadme;
+module.exports = generatedReadme;

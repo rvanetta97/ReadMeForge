@@ -71,7 +71,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions). then((responses) => {
         console.log("Super... Epic... ReadMe generating...");
-        writeToFile("./ReadMe Files/README.md", generateReadme({...responses}));
+        writeToFile("./ReadMe Files/README.md", generatedReadme({...responses}));
     });
 }
 
