@@ -37,8 +37,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "required",
-        message: "Are there any project dependancies that the user may need to access the program?"
+        name: "installation",
+        message: "Are there any project dependancies/installations that the user may need to access the program?"
     },
     {
         type: "input",
@@ -47,8 +47,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "installation",
-        message: "What languages need to be installed/utitlized for this project?"
+        name: "technology",
+        message: "What languages are used in this project?"
     },
     {
         type: "input",
