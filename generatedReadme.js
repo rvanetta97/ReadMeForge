@@ -1,4 +1,4 @@
-function generateReadme (data){
+function readMe(data){
     return`
     # ${data.title}
         ${data.license}
@@ -17,7 +17,6 @@ function generateReadme (data){
     -[Motivation/Problems Solved](#motivation/problems-solved)
     -[Table of Contents](#table-of-contents)
     -[Installation](#installation)
-    -[Usage](#usage)
     -[Features](#features)
     -[Improvements](#improvements)
     -[Learnings](#learnings)
@@ -26,16 +25,15 @@ function generateReadme (data){
         ${data.installation}
         "Technologies utilized:"
         ${data.technology}
-    ## Usage
-        ${data.usage}
 
     ## Features
         ${data.features}
     
     ## Improvements
         ${data.improvements}
+        ${data.learnings}
 
     `   
 }
 
-module.exports = generatedReadme;
+module.exports = readMe;
