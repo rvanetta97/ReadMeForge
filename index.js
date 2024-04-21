@@ -12,6 +12,11 @@ const questions = [
     },
     {
         type: "input",
+        name: "description",
+        message: "Please write a brief description about the functionality of your project:"
+    },
+    {
+        type: "input",
         name: "motivation",
         message: "What motivated you to build this project?"
     },
@@ -34,7 +39,7 @@ const questions = [
         type: "input",
         name: "required",
         message: "Are there any project dependancies that the user may need to access the program?"
-    }
+    },
     {
         type: "input",
         name: "features",
