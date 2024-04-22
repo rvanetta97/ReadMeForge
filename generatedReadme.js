@@ -1,16 +1,16 @@
-function readMe(data){
+function readMe(responses){
     return`
-    # ${data.title}
-        ${data.license}
-        "By ${data.github}"
-        "Depolyed program: ${data.link}"
+    # ${responses.title}
+        ${responses.license}
+        "By ${responses.github}"
+        "Depolyed program: ${responses.link}"
 
     ## Description
-    ${data.description}
+    ${responses.description}
 
     ## Motivation/Problems Solved
-        ${data.motivation}
-        ${data.problem}
+        ${responses.motivation}
+        ${responses.problem}
 
     ## Table of Contents
     -[Description](#description)
@@ -22,16 +22,16 @@ function readMe(data){
     -[Learnings](#learnings)
 
     ## Installation
-        ${data.installation}
+        ${responses.installation}
         "Technologies utilized:"
-        ${data.technology}
+        ${responses.technology}
 
     ## Features
-        ${data.features}
+        ${responses.features}
     
     ## Improvements
-        ${data.improvements}
-        ${data.learnings}
+        ${responses.improvements}
+        ${responses.learnings}
 
     `   
 }

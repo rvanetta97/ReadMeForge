@@ -63,14 +63,14 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd() + '/' + fileName), data);
+function writeToFile(fileName, responses) {
+    return fs.writeFileSync(path.join(process.cwd() + '/' + fileName), responses);
 };
 
 function init() {
     inquirer.prompt(questions). then((responses) => {
         console.log("Super... Epic... ReadMe generating...");
-        writeToFile('./readme/README.md', readMe({...responses}));
+        writeToFile(`./readme/${responses.title}.md`, readMe({...responses}));
     });
 };
 
