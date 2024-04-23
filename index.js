@@ -74,16 +74,30 @@ const questions = [
     },
 ];
 
-//function to write README file
 function writeToFile(fileName, responses) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), responses);
-};
+    return new Promise((resolve, reject) => {
+        fs.writeFile(path.join(process.cwd(), fileName), responses, (err) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve();
+            }
+        });
+    });
+}
 
 function init() {
-    inquirer.prompt(questions). then((responses) => {
+    inquirer.prompt(questions).then((responses) => {
         console.log("Best Readme ever coming soon....");
-        writeToFile(`./readme/${responses.title}.md`, readMe({...responses}));
+        writeToFile(`./readme/${responses.title}.md`, readMe({ ...responses }))
+            .then(() => {
+                console.log('README file created successfully!');
+            })
+            .catch((err) => {
+                console.error('Error writing README file:', err);
+            });
     });
-};
+}
 
 init();
+
