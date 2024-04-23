@@ -1,7 +1,7 @@
 ## Readme Forge
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-    "By rvanetta97"
-    "Deployed program: https://github.com/rvanetta97"
+    [![License: MIT][(https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+    By rvanetta97
+    Deployed program: [https://github.com/rvanetta97/READMEFORGE](https://github.com/rvanetta97/ReadMeForge)
 
 ## Table of Contents
 -[Description](#description)
