@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const readMe = require("./generatedReadme");
+const readMe = require("./utils/generatedReadme");
 const path = require("path")
 // TODO: Create an array of questions for user input
 const questions = [
@@ -80,8 +80,9 @@ function writeToFile(fileName, responses) {
 
 function init() {
     inquirer.prompt(questions). then((responses) => {
-        console.log("Super... Epic... ReadMe generating...");
+        console.log("Best Readme ever coming soon....");
         writeToFile(`./readme/${responses.title}.md`, readMe({...responses}));
+        console.log("")
     });
 };
 
