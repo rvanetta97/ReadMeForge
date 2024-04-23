@@ -36,7 +36,7 @@ function readMe(responses){
     -[How to Contribute](#how-to-contribute)
 
     ## Description
-    ${responses.description}
+        ${responses.description}
 
     ## Motivation/Problems Solved
         ${responses.motivation}
