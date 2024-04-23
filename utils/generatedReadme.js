@@ -44,7 +44,7 @@ function readMe(responses){
 
     ## Installation
         ${responses.installation}
-        "Technologies utilized:"
+        # Technologies utilized:
         ${responses.technology}
 
     ## Features

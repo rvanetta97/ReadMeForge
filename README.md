@@ -20,7 +20,7 @@ This project is designed to generate a README file based on user input. It promp
 
 ## Installation
     Node.js, Inquirer.js v8.2.4, fs, path
-    "Technologies utilized:"
+# Technologies utilized:
     node.js
 
 ## Features
