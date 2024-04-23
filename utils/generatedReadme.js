@@ -24,8 +24,8 @@ function readMe(responses){
     return`
     ## ${responses.title}
         ${licenseBadge(responses.licenses)} 
-        "By ${responses.github}"
-        "Deployed program: ${responses.link}"
+        By ${responses.github}
+        Deployed program: ${responses.link}
 
     ## Table of Contents
     -[Description](#description)
