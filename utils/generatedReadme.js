@@ -1,5 +1,5 @@
 function licenseBadge(licenses){
-    let license = responses.licenses
+    let badge = '';
     switch (licenses){
         case 'MIT':
             badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
@@ -17,12 +17,13 @@ function licenseBadge(licenses){
             badge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)'
             break;
     }
+    return badge;
 };
 
 function readMe(responses){
     return`
-    # ${responses.title}
-        ${licenseBadge(badge)}
+    ## ${responses.title}
+        ${licenseBadge(responses.licenses)} 
         "By ${responses.github}"
         "Deployed program: ${responses.link}"
 
