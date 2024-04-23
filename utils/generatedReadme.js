@@ -1,13 +1,28 @@
 function licenseBadge(licenses){
-    if (licenses !== "none"){
-        return `![Github license](https://img.shields.io/badge/license-${responses.licenses}-blue.svg)`;
+    let license = responses.licenses
+    switch (licenses){
+        case 'MIT':
+            badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+            break;
+        case 'Zlib':
+            badge = '[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)'
+            break;
+        case 'Apache':
+            badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+            break;
+        case 'WTFPL':
+            badge = '[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)'
+            break;
+        case 'Unlicense':
+            badge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)'
+            break;
     }
 };
 
 function readMe(responses){
     return`
     # ${responses.title}
-        ${licenseBadge(responses.licenses)}
+        ${licenseBadge(badge)}
         "By ${responses.github}"
         "Deployed program: ${responses.link}"
 

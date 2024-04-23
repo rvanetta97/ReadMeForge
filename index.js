@@ -14,7 +14,7 @@ const questions = [
         type: "list",
         name: "licenses",
         message: "What is the license on your Github repository?",
-        choices: ["MIT", "Zlib", "MS-PL", "NCSA", "Unlicense", "ISC", "LGPL", "none"],
+        choices: ["MIT", "Zlib", "Apache", "WTFPL", "Unlicense", "none"],
     },
     {
         type: "input",
