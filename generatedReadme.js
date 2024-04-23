@@ -7,9 +7,17 @@ function licenseBadge(license){
 function readMe(responses){
     return`
     # ${responses.title}
-        ${responses.licenses}
+        ${licenseBadge(responses.licenses)}
         "By ${responses.github}"
         "Depolyed program: ${responses.link}"
+
+    ## Table of Contents
+    -[Description](#description)
+    -[Motivation/Problems Solved](#motivation/problems-solved)
+    -[Installation](#installation)
+    -[Features](#features)
+    -[Improvements](#improvements)
+    -[How to Contribute](#how-to-contribute)
 
     ## Description
     ${responses.description}
@@ -17,15 +25,6 @@ function readMe(responses){
     ## Motivation/Problems Solved
         ${responses.motivation}
         ${responses.problem}
-
-    ## Table of Contents
-    -[Description](#description)
-    -[Motivation/Problems Solved](#motivation/problems-solved)
-    -[Table of Contents](#table-of-contents)
-    -[Installation](#installation)
-    -[Features](#features)
-    -[Improvements](#improvements)
-    -[Learnings](#learnings)
 
     ## Installation
         ${responses.installation}
@@ -39,6 +38,8 @@ function readMe(responses){
         ${responses.improvements}
         ${responses.learnings}
 
+    ##How to Contribute
+        ${responses.contribute}
     `   
 }
 

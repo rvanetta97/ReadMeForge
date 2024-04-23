@@ -66,6 +66,11 @@ const questions = [
         name: "github",
         message: "What is your GitHub username?"
     },
+    {
+        type: "input",
+        name: "contribute",
+        message: "What rules would you like user to follow when contributing to this project?"
+    },
 ];
 
 // TODO: Create a function to write README file
