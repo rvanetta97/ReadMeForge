@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+//packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const readMe = require("./utils/generatedReadme");
 const path = require("path")
-// TODO: Create an array of questions for user input
+//questions for user input
 const questions = [
     {
         type: "input",
@@ -73,7 +73,7 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+//function to write README file
 function writeToFile(fileName, responses) {
     return fs.writeFileSync(path.join(process.cwd() + '/' + fileName), responses);
 };
@@ -82,10 +82,8 @@ function init() {
     inquirer.prompt(questions). then((responses) => {
         console.log("Best Readme ever coming soon....");
         writeToFile(`./readme/${responses.title}.md`, readMe({...responses}));
-        console.log("")
     });
 };
 
 
-// Function call to initialize app
 init();
