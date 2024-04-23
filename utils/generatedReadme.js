@@ -54,7 +54,7 @@ function readMe(responses){
         ${responses.improvements}
         ${responses.learnings}
 
-    ##How to Contribute
+    ## How to Contribute
         ${responses.contribute}
     `   
 }
