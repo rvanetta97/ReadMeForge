@@ -2,7 +2,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const readMe = require("./utils/generatedReadme");
-const path = require("path")
+const path = require("path");
+
 //questions for user input
 const questions = [
     {
@@ -84,6 +85,5 @@ function init() {
         writeToFile(`./readme/${responses.title}.md`, readMe({...responses}));
     });
 };
-
 
 init();
