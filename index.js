@@ -12,9 +12,9 @@ const questions = [
     },
     {
         type: "list",
-        name: "license",
+        name: "licenses",
         message: "What is the license on your Github repository?",
-        choices: ["MIT", "Zlib", "MS-PL", "NCSA", "Unlicense", "ISC", "LGPL"],
+        choices: ["MIT", "Zlib", "MS-PL", "NCSA", "Unlicense", "ISC", "LGPL", "none"],
     },
     {
         type: "input",

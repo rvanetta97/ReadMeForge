@@ -1,7 +1,13 @@
+function licenseBadge(license){
+    if (license !== "none"){
+        return `![Github license](https://img.shields.io/badge/license-${licenses}-blue.svg)`;
+    }
+};
+
 function readMe(responses){
     return`
     # ${responses.title}
-        ${responses.license}
+        ${responses.licenses}
         "By ${responses.github}"
         "Depolyed program: ${responses.link}"
 
