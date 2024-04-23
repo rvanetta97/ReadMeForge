@@ -2,7 +2,7 @@
     ## Readme Forge
         [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
         By rvanetta97
-        Deployed program: https://github.com/rvanetta97/ReadMeForge
+        Deployed program: https://github.com/rvanetta97/ReadmeForge
 
     ## Table of Contents
     -[Description](#description)
@@ -13,24 +13,24 @@
     -[How to Contribute](#how-to-contribute)
 
     ## Description
-        This project is designed to generate a README file based on user input. It prompts the user with a series of questions to gather information about their project, such as the project title, description, motivation, problem addressed, technologies used, and more.
+        creates a readme based on user input
 
     ## Motivation/Problems Solved
-        The motivation behind this project is to streamline the process of creating README files for various projects. By automating the generation of README files, developers can save time and ensure consistency in the documentation of their projects.
-        The project addresses the challenge of manually creating README files, which can be time-consuming and prone to errors. With this automated solution, developers can quickly generate professional-looking README files with minimal effort.
+        the annoyance from making readmes
+        This addresses the time it takes to complete this Readme by hand and allows me to complete the project faster.
 
     ## Installation
-        Node.js, Inquirer.js v8.2.4, fs, path
+        node.js, inquirer 
         # Technologies utilized:
-        node.jshttps://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#file-license-badges-md
+        node.js
 
     ## Features
-        -Generates a README file based on user input-Prompts the user with questions to gather project information-Supports customization of README content based on user responses-Provides a structured template for creating professional README files
+        unique questions to focus the user on different aspects of the code they have built
     
     ## Improvements
-        -Error handling for invalid user input-Support for additional license types and badgesIntegration with version control systems for automated README updates-Enhanced formatting options for README content-Localization support for different languages.
-        The key to a great Readme is in-depth questions and answers that allow a user to understand the code from a broad point of view.
+        better layout and more in-depth questions
+        node.js is fun to work with, but inquirer can be a pain at times
 
     ## How to Contribute
-        Contributions to this project are welcome! If you have ideas for improvements or new features, feel free to submit a pull request or open an issue on GitHub.
+        https://www.contributor-covenant.org/
     
