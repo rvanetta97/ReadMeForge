@@ -75,7 +75,7 @@ const questions = [
 
 //function to write README file
 function writeToFile(fileName, responses) {
-    return fs.writeFileSync(path.join(process.cwd() + '/' + fileName), responses);
+    return fs.writeFileSync(path.join(process.cwd(), fileName), responses);
 };
 
 function init() {
