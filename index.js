@@ -11,6 +11,12 @@ const questions = [
         message: "What is the name of your project?"
     },
     {
+        type: "list",
+        name: "license",
+        message: "What is the license on your Github repository?",
+        choices: ["MIT","Zlib","MS-PL","NCSA","Unlicense","ISC","LGPL ]
+    },
+    {
         type: "input",
         name: "description",
         message: "Please write a brief description about the functionality of your project:"
