@@ -22,6 +22,7 @@ This project is designed to generate a README file based on user input. It promp
     Node.js, Inquirer.js v8.2.4, fs, path
 # Technologies utilized:
     node.js
+    https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#file-license-badges-md
 
 ## Features
     -Generates a README file based on user input
